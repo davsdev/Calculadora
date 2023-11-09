@@ -1,0 +1,100 @@
+/* Estilos para o corpo da página */
+body {
+  font-family: Arial, sans-serif; /* Define a fonte do texto para Arial ou uma fonte sans-serif genérica */
+  display: flex; /* Define o tipo de display como flexível, permitindo a criação de um layout flexível */
+  justify-content: center; /* Alinha os elementos filhos horizontalmente ao centro do contêiner pai */
+  align-items: center; /* Alinha os elementos filhos verticalmente ao centro do contêiner pai */
+  height: 100vh; /* Define a altura do corpo da página como 100% da altura da viewport (viewport height) */
+  margin: 0; /* Remove as margens padrão do corpo da página */
+}
+
+/* Estilos para a calculadora */
+.calculator {
+  display: grid; /* Define o tipo de display como grid, permitindo a criação de um layout de grade */
+  grid-template-columns: repeat(
+    4,
+    1fr
+  ); /* Define quatro colunas de largura igual */
+  gap: 10px; /* Define o espaçamento entre os elementos filhos como 10 pixels */
+  max-width: 300px; /* Define a largura máxima da calculadora como 300 pixels */
+  margin: auto; /* Centraliza a calculadora no centro da página */
+  padding: 2rem;
+  border-radius: 5%;
+  background-color: #242424
+}
+
+/* Estilos para a caixa de exibição */
+.display {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  grid-column: span 4; /* A caixa de exibição ocupa 4 colunas na grade */
+  height: 40px; /* Define a altura da caixa de exibição como 40 pixels */
+  font-size: 20px; /* Define o tamanho da fonte como 20 pixels */
+  font-weight: 600;
+  text-align: right; /* Alinha o texto à direita dentro da caixa de exibição */
+  border-radius: 0.3rem;
+  border: 0;
+  margin-bottom: 1rem;
+}
+
+/* Estilos para os botões */
+.btn {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: aliceblue;
+  font-size: 18px; /* Define o tamanho da fonte dos botões como 18 pixels */
+  padding: 10px; /* Adiciona um preenchimento interno de 10 pixels nos botões */
+  background-color:rgb(51, 75, 153);
+  border: 0;
+  border-radius: 0.3rem;
+}
+
+.btn:hover {
+  transition: 100ms;
+  background-color: #0c4077;
+  cursor: pointer;
+}
+
+.btnequal {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: aliceblue;
+  font-size: 18px; /* Define o tamanho da fonte dos botões como 18 pixels */
+  padding: 10px; /* Adiciona um preenchimento interno de 10 pixels nos botões */
+  background-color: #ffb006;
+  border: 0;
+  border-radius: 0.3rem;
+  font-weight: bolder;
+}
+
+.btnequal:hover {
+  transition: 100ms;
+  background-color: #db7901;
+  cursor: pointer;
+}
+
+
+.btnoperador {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: aliceblue;
+  font-size: 18px; /* Define o tamanho da fonte dos botões como 18 pixels */
+  padding: 10px; /* Adiciona um preenchimento interno de 10 pixels nos botões */
+  background-color: #0785d4;
+  border: 0;
+  border-radius: 0.3rem;
+  font-weight: bolder;
+}
+
+.btnoperador:hover {
+  transition: 100ms;
+  background-color: #044292;
+  cursor: pointer;
+}
+
+.calcheader {
+  grid-column: span 4;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #242424;
+  color:rgb(255, 255, 255);
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 1rem;
+  border: 0;
+}
